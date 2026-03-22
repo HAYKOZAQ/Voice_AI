@@ -1,0 +1,200 @@
+{
+  "generated_from": "D:\\DATA\\Voice_AI",
+  "checks": [
+    {
+      "name": "bank:ameriabank",
+      "passed": true,
+      "details": "present in knowledge_base.json"
+    },
+    {
+      "name": "bank:ardshinbank",
+      "passed": true,
+      "details": "present in knowledge_base.json"
+    },
+    {
+      "name": "bank:mellatbank",
+      "passed": true,
+      "details": "present in knowledge_base.json"
+    },
+    {
+      "name": "prompt:Always respond in Armenian unless the us...",
+      "passed": true,
+      "details": "found in system prompt"
+    },
+    {
+      "name": "prompt:Use only the knowledge base injected bel...",
+      "passed": true,
+      "details": "found in system prompt"
+    },
+    {
+      "name": "prompt:Do not use outside knowledge, prior assu...",
+      "passed": true,
+      "details": "found in system prompt"
+    },
+    {
+      "name": "prompt:If the user asks about another bank, say...",
+      "passed": true,
+      "details": "found in system prompt"
+    },
+    {
+      "name": "prompt:If the user asks about a topic outside d...",
+      "passed": true,
+      "details": "found in system prompt"
+    },
+    {
+      "name": "prompt:If the user asks about cards, transfers,...",
+      "passed": true,
+      "details": "found in system prompt"
+    },
+    {
+      "name": "prompt:If the knowledge base does not contain t...",
+      "passed": true,
+      "details": "found in system prompt"
+    },
+    {
+      "name": "prompt:If the question could match more than on...",
+      "passed": true,
+      "details": "found in system prompt"
+    },
+    {
+      "name": "prompt:Never invent rates, fees, branch address...",
+      "passed": true,
+      "details": "found in system prompt"
+    },
+    {
+      "name": "artifact:prompt_markdown_smaller_than_json",
+      "passed": true,
+      "details": "knowledge_base.md=2327251 bytes, knowledge_base.json=4814674 bytes"
+    },
+    {
+      "name": "totals:pages",
+      "passed": true,
+      "details": "pages=87, minimum=70"
+    },
+    {
+      "name": "totals:tables",
+      "passed": true,
+      "details": "tables=64, minimum=40"
+    },
+    {
+      "name": "totals:pdfs",
+      "passed": true,
+      "details": "pdfs=27, minimum=10"
+    }
+  ],
+  "banks": {
+    "ameriabank": {
+      "checks": [
+        {
+          "name": "deposits:min_pages",
+          "passed": true,
+          "details": "pages=5, minimum=3"
+        },
+        {
+          "name": "credits:min_pages",
+          "passed": true,
+          "details": "pages=35, minimum=20"
+        },
+        {
+          "name": "branches:min_pages",
+          "passed": true,
+          "details": "pages=2, minimum=1"
+        }
+      ],
+      "coverage": {
+        "deposits": {
+          "pages": 5,
+          "tables": 5,
+          "pdfs": 4
+        },
+        "credits": {
+          "pages": 35,
+          "tables": 11,
+          "pdfs": 8
+        },
+        "branches": {
+          "pages": 2,
+          "tables": 0,
+          "pdfs": 2
+        }
+      }
+    },
+    "ardshinbank": {
+      "checks": [
+        {
+          "name": "deposits:min_pages",
+          "passed": true,
+          "details": "pages=2, minimum=1"
+        },
+        {
+          "name": "credits:min_pages",
+          "passed": true,
+          "details": "pages=29, minimum=15"
+        },
+        {
+          "name": "branches:min_pages",
+          "passed": true,
+          "details": "pages=1, minimum=1"
+        }
+      ],
+      "coverage": {
+        "deposits": {
+          "pages": 2,
+          "tables": 2,
+          "pdfs": 5
+        },
+        "credits": {
+          "pages": 29,
+          "tables": 35,
+          "pdfs": 8
+        },
+        "branches": {
+          "pages": 1,
+          "tables": 0,
+          "pdfs": 0
+        }
+      }
+    },
+    "mellatbank": {
+      "checks": [
+        {
+          "name": "deposits:min_pages",
+          "passed": true,
+          "details": "pages=1, minimum=1"
+        },
+        {
+          "name": "credits:min_pages",
+          "passed": true,
+          "details": "pages=11, minimum=5"
+        },
+        {
+          "name": "branches:min_pages",
+          "passed": true,
+          "details": "pages=1, minimum=1"
+        }
+      ],
+      "coverage": {
+        "deposits": {
+          "pages": 1,
+          "tables": 2,
+          "pdfs": 0
+        },
+        "credits": {
+          "pages": 11,
+          "tables": 9,
+          "pdfs": 0
+        },
+        "branches": {
+          "pages": 1,
+          "tables": 0,
+          "pdfs": 0
+        }
+      }
+    }
+  },
+  "totals": {
+    "pages": 87,
+    "tables": 64,
+    "pdfs": 27
+  }
+}
